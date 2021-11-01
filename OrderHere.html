@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Order Form</title>
+</head>
+<body bgcolor="#212480 " style="font-family: 'Montserrat', sans-serif; ">
+
+    <!-- Membuat Navigasi -->
+    <ul style="list-style-type: none; margin-right: 10px; padding: 10px; overflow: hidden; position: sticky; top: 0;
+    box-shadow: 0 0 10px black; background-color:#171A69">
+       <li style="float: left; margin-top: auto; ">
+           <img src="!logo.png" alt="Logo" style="width: 200px; height: 30px;">
+       </li>
+       <li style="float: right; margin-top: 10px; margin-right: 30px;">
+           <a href="OrderHere.html" style=" padding: 14px 16px; text-decoration: none; ">
+               <font color="white">Order Here</font>
+           </a>
+       </li>
+       <li style="float: right;  margin-top: 10px;">
+           <a href="PriceList.html"  style=" padding: 14px 16px; text-decoration: none; ">
+               <font color="white">Price List</font>
+           </a>
+       </li>
+       <li style="float: right; margin-top: 10px;">
+           <a href="AboutUs.html" style=" padding: 14px 16px; text-decoration: none; ">
+               <font color="white">About Us</font>
+           </a>
+       </li>
+       <li style="float: right;  margin-top: 10px;">
+           <a href="content.html"  style=" padding: 14px 16px; text-decoration: none; ">
+               <font color="white">Home</font>
+           </a>
+       </li>
+   </ul>
+   
+
+   <!-- Membuat Formulir Order -->
+   <div>
+    <h2 style="text-align: center; margin-top: 20px;">
+        <font color="white">Formulir Pemesanan</font>
+    </h2>
+
+    <form >
+        <table align="center" cellspacing="10">
+            
+            <tr>
+                <td>
+                    <label for="name">
+                        <font color="white">NAMA</font>
+                    </label> 
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" style="width: 272px; height: 25px;" ><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="alamat">
+                        <font color="white">ALAMAT</font>
+                    </label>
+                     
+                </td>
+                <td>
+                    <textarea name="alamat"cols="35" rows="5"></textarea> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">
+                        <font color="white">No. HP/WA</font>
+                    </label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" name="phone" style="width: 272px; height: 25px;"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">
+                        <font color="white"> EMAIL</font>
+                    </label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" style="width: 272px; height: 25px;"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Tenda">
+                        <font color="white">Pilih Tenda</font> <br>
+                    </label> 
+                </td>
+                <td>
+                    <select id="Tenda" name="Tenda" style="width: 280px; height: 25px;" >
+                        <option value="Balon">Tenda Dekorasi Balon</option>
+                        <option value="SerutDatar">Tenda Dekorasi Serut Datar</option>
+                        <option value="Standart">Tenda Plafon Standart</option>
+                    </select> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Alas">
+                        <font color="white">Pilih Alas</font> <br>
+                    </label> 
+                </td>
+                <td>
+                    <select id="Alas" name="Alas" style="width: 280px; height: 25px;" >
+                        <option value="None">None</option>
+                        <option value="PapanKarpet">Alas Papan + Karpet</option>
+                        <option value="Karpet">Karpet</option>
+                    </select> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Panggung">
+                        <font color="white">Pilih Panggung  &emsp;</font> <br>
+                    </label> 
+                </td>
+                <td>
+                    <select id="Panggung" name="Panggung" style="width: 280px; height: 25px;" >
+                        <option value="None">None</option>
+                        <option value="50cm">Tinggi : 50 cm</option>
+                        <option value="1mkuadrat">Tinggi : 1 m<sup>2</sup></option>
+                    </select> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="catatan">
+                        <font color="white">Catatan</font>
+                    </label>
+                     
+                </td>
+                <td>
+                    <textarea name="catatan"cols="35" rows="3">contoh : Tendanya 40m², karpet 20m², Panggung 5m² </textarea> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tanggalPasang">
+                        <font color="white">Pilih Tanggal</font>
+                    </label>
+                </td>
+                <td>
+                    <input type="date" id="tanggalPasang" name="tanggalPasang" style="width: 275px; height: 25px;" >
+                </td>
+            </tr>
+        </table>
+
+        <!-- Membuat Button -->
+        <div style="text-align: center; margin-top: 20px;">
+            <input  type="submit" onclick="alert('Order diterima, pesanan anda akan kami proses kurang dari 1x24 jam')" 
+            value="ORDER" style="padding:5px 10px; border-radius: 8px; color: white; cursor: pointer; 
+            background-color: rgb(14, 175, 14); box-shadow: 0 0 5px grey;" >
+            <input  type="reset" value="BATAL" style="padding:5px 10px; border-radius: 8px; color: white; 
+            cursor: pointer; background-color: rgb(216, 39, 39); box-shadow: 0 0 5px grey;" >
+        </div>
+    </form>
+</div>
+
+
+
+</body>
+</html>
